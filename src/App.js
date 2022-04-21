@@ -7,11 +7,14 @@ import jsonServerProvider from "ra-data-json-server";
 import PostIcon from "@mui/icons-material/Book";
 import UserIcon from "@mui/icons-material/Group";
 import authProvider from "./authProvider";
+//import { Router, Link, Route, Routes } from "react-router-dom";
 
 const dataProvider = jsonServerProvider("https://jsonplaceholder.typicode.com");
 
 const App = () => (
+
   <Admin
+  // 아래 3개 custom reducer 역할하는 컴포넌트들
     dashboard={Dashboard}
     authProvider={authProvider}
     dataProvider={dataProvider}
